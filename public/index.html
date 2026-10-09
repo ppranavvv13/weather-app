@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Weather Dashboard ☁️</h1>
+    <p class="subtitle">Discover the weather anywhere.</p>
+
+    <form id="search-form">
+      <input
+        id="city-input"
+        type="text"
+        placeholder="Enter a city, e.g. Delhi"
+        required
+      >
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="message" role="status">Search for a city to begin.</p>
+
+    <section id="weather-card" class="weather-card" hidden>
+      <h2 id="location"></h2>
+      <p id="condition"></p>
+      <p class="temperature" id="temperature"></p>
+      <p id="feels-like"></p>
+
+      <div class="details">
+        <div>
+          <span>Humidity</span>
+          <strong id="humidity"></strong>
+        </div>
+        <div>
+          <span>Wind speed</span>
+          <strong id="wind"></strong>
+        </div>
+        <div>
+          <span>Precipitation</span>
+          <strong id="precipitation"></strong>
+        </div>
+      </div>
+
+      <p class="updated" id="updated"></p>
+    </section>
+  </main>
+</body>
+</html>
